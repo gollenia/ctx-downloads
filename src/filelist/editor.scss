@@ -1,0 +1,66 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.downloads-block {
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	&__filter {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+
+		button {
+			background: #ddd;
+			border: 0;
+			padding: 8px;
+		}
+	}
+
+	&__search {
+		flex: 1;
+
+		input {
+			padding: 4px 9px;
+			border-radius: 99px;
+		}
+	}
+
+	&__categories {
+		display: flex;
+		gap: 1rem;
+	}
+}
+
+.downloads-block__cats {
+	padding: 10px 0;
+
+	.downloads-block__cat {
+		/* font-weight: bold; */
+		padding: 5px;
+		background: #007cba12;
+		border-radius: 6px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid #007cba;
+		margin-bottom: 10px;
+
+		button {
+			padding: 0;
+			border: 0;
+			background: #007cba;
+			border-radius: 99px;
+			color: #fff;
+		}
+	}
+}
+
+.downloads-block__taxonomy {
+}

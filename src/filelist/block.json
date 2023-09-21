@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ctx/filelist",
+	"title": "Downloads",
+	"category": "widgets",
+	"viewScript": "ctx-filelist-view",
+	"keywords": [ "files", "download", "table" ],
+	"textdomain": "ctx-downloads",
+	"description": "Show a downloads list.",
+	"attributes": {
+		"showDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"showSize": {
+			"type": "boolean",
+			"default": true
+		},
+		"showFilter": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"showCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"showSearch": {
+			"type": "boolean",
+			"default": true
+		},
+		"showFilename": {
+			"type": "boolean",
+			"default": true
+		},
+		"showIcon": {
+			"type": "boolean",
+			"default": true
+		},
+		"showTableHeader": {
+			"type": "boolean",
+			"default": true
+		},
+		"categories": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"editorStyle": "ctx-downloads-editor-style",
+	"supports": {
+		"html": false,
+		"textAlign": true,
+		"color": {
+			"custom": true,
+			"text": true
+		}
+	},
+	"providesContext": {
+		"ctx/showDate": "showDate",
+		"ctx/showSize": "showSize",
+		"ctx/showDescription": "showDescription",
+		"ctx/showCategory": "showCategory",
+		"ctx/showFilename": "showFilename",
+		"ctx/showIcon": "showIcon",
+		"ctx/categories": "categories"
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ctx/file",
+	"title": "File",
+	"category": "widgets",
+	"keywords": [ "icon", "symbol" ],
+	"textdomain": "ctx-downloads",
+	"description": "Shows a single file with an icon and a description.",
+	"attributes": {
+		"fileDescription": {
+			"type": "string",
+			"default": ""
+		},
+		"fileUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"fileId": {
+			"type": "number",
+			"default": 0
+		},
+		"fileDate": {
+			"type": "string",
+			"default": ""
+		},
+		"fileSize": {
+			"type": "string",
+			"default": ""
+		},
+		"fileType": {
+			"type": "string",
+			"default": ""
+		},
+		"fileName": {
+			"type": "string",
+			"default": ""
+		},
+		"categoryValue": {
+			"type": "string",
+			"default": ""
+		},
+		"categoryLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"parentData": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"editorStyle": "ctx-downloads-editor-style",
+	"supports": {
+		"html": false,
+		"textAlign": true,
+		"color": {
+			"custom": true,
+			"text": true
+		}
+	},
+	"parent": [ "ctx/filelist" ],
+	"usesContext": [ "ctx/showDate", "ctx/showSize", "ctx/showDescription", "ctx/tags", "ctx/showFilename", "ctx/showIcon", "ctx/showCategory", "ctx/categories" ]
+}
