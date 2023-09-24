@@ -17,7 +17,9 @@ export default function save( { attributes } ) {
 				) }
 				{ parentData[ 'ctx/showFilename' ] && (
 					<td>
-						<a href={ fileUrl }>{ fileName }</a>
+						<a href={ fileUrl } target="_blank">
+							{ fileName }
+						</a>
 					</td>
 				) }
 				{ parentData[ 'ctx/showDescription' ] && <td>{ fileDescription }</td> }
@@ -25,7 +27,7 @@ export default function save( { attributes } ) {
 				{ parentData[ 'ctx/showDate' ] && <td>{ fileDate }</td> }
 				{ parentData[ 'ctx/showCategory' ] && <td>{ categoryLabel }</td> }
 				<td>
-					<a href={ fileUrl }>
+					<a href={ fileUrl } target="_blank">
 						<Icon icon={ icons.download }></Icon>
 					</a>
 				</td>
